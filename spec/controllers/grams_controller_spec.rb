@@ -16,11 +16,7 @@ RSpec.describe GramsController, type: :controller do
     end
 
     it "should succesfully show the new form" do
-      user = User.create(
-        email: 'ihavenids@gmail.com',
-        password: '123456789',
-        password_confirmation: '123456789'
-      )
+      user = FactoryGirl.create(:user)
       sign_in user
 
       get :new
@@ -35,11 +31,7 @@ RSpec.describe GramsController, type: :controller do
     end
 
     it "Should successfully create a new gram in the database" do
-      user = User.create(
-        email: 'ihavenids@gmail.com',
-        password: '123456789',
-        password_confirmation: '123456789'
-      )
+      user = FactoryGirl.create(:user)
       sign_in user
 
       post :create, gram: {message: 'Hello!'}
@@ -51,11 +43,7 @@ RSpec.describe GramsController, type: :controller do
     end
 
     it "should properly deal with validations" do
-      user = User.create(
-        email: 'ihavenids@gmail.com',
-        password: '123456789',
-        password_confirmation: '123456789'
-      )
+      user = FactoryGirl.create(:user)
       sign_in user
 
       gram_count = Gram.count
