@@ -9,6 +9,7 @@ gem 'sass-rails'
 
 gem 'simple_form'
 gem 'devise'
+gem 'carrierwave'
 
 gem 'rails_12factor', group: :production
 # Use postgresql as the database for Active Record
