@@ -25,10 +25,10 @@
            <%= comment.message %>
          </div>
        <% end %>
-      <h4>Add a comment</h4>
+
       <%= simple_form_for Comment.new, url: gram_comments_path(gram) do |f| %>
         <%= f.input :message %>
-        <%= f.submit 'Add Comment', class: 'my-btn' %>
+        <%= f.submit 'add', class: 'my-btn' %>
       <% end %>
     </div>
   </div>

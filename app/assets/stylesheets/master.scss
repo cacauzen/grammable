@@ -3,6 +3,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+
 .top-nav {
   background-color:white;
   border-bottom-color: #edeeee;
@@ -10,6 +11,7 @@ body {
   border-bottom-style: solid;
   height:70px;
   padding-top:15px;
+
 }
 
 .top-nav .add a {
@@ -23,15 +25,20 @@ body {
   margin-top:10px;
 }
 
-.brand {
+.brand a {
   color: #125688;
   font-size: 30px;
   font-family: 'Pacifico', cursive;
 }
+
+a:hover {
+  text-decoration: none;
+  color: #C9C9C9;
+}
 .card {
   background-color: #fff;
   border-radius: .25rem;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
   border: 1px solid #e8e8e8;
   padding: 10px;
   margin-top: 40px;
@@ -39,7 +46,7 @@ body {
 }
 .handle {
   margin: 10px;
-  color: #125688;
+  color: #C9C9C9;
   font-weight: bold;
   font-size: 18px;
 }
@@ -63,7 +70,7 @@ input {
 }
 
 .my-btn {
-  background-color: #125688;
+  background-color: #C9C9C9;
   width: 100%;
   border: none;
   font-size: 24px;
@@ -84,6 +91,7 @@ input {
   font-weight: bold;
   font-size: 16px;
   margin-right:20px;
+  color: #C9C9C9;
 }
 .comments {
   padding: 20px;
@@ -93,7 +101,7 @@ input {
   margin-top:5px;
 }
 .comment_handle {
-  color: #125688;
+  color: #C9C9C9;
   font-weight: bold;
   font-size: 18px;
 }
