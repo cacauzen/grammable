@@ -1,5 +1,5 @@
 Grammable::Application.routes.draw do
-  devise_for :users
+  devise_for :users, :controllers => { registrations: 'registrations' }
   root "grams#index"
   resources :grams do
     resources :comments, only: :create

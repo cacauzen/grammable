@@ -1,5 +1,6 @@
 class GramsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+
   def new
     @grams = Gram.new
   end
@@ -58,6 +59,10 @@ class GramsController < ApplicationController
 
   def gram_params
     params.require(:gram).permit(:message, :picture)
+  end
+
+  def user_params
+    params.require(:user).permit(:first_name)
   end
 
 end
