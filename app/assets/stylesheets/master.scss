@@ -51,6 +51,10 @@ a:hover {
   font-size: 18px;
 }
 
+.handle .img-responsive {
+  image-size: cover;
+}
+
 .card p, .card .message {
   font-size: 18px;
   margin: 20px;
@@ -122,4 +126,10 @@ input {
   margin-top: -15px;
   border-radius: 100%;
   border: 5px solid #E9E9E9;
+}
+.user-card-pic{
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  border: 2px solid #E9E9E9;
 }
