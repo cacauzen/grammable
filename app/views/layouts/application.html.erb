@@ -18,7 +18,7 @@
          </div>
       <div class="add pull-right">
           <% if current_user %>
-            <div class="xs-hidden">Hi, <%=current_user.first_name%>!</div>
+              <%= image_tag current_user.profile_picture, class: "profile-picture" %>
              <%= link_to "New Post", new_gram_path %>
             <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
           <% else %>
