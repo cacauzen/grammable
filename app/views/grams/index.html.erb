@@ -22,7 +22,7 @@
       <% gram.comments.each do |comment| %>
          <div class="comment">
            <span class="comment_handle">
-             <%= comment.user.email %>
+             <%= comment.user.first_name %>
            </span>
 
            <%= comment.message %>
