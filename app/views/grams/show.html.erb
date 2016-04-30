@@ -1,1 +1,13 @@
-<%= @gram.inspect %>
+
+<br />
+<div class="col-md-12">
+    <%= link_to "Edit My Info", edit_user_registration_path, class: 'text-center' %>
+</div>
+<br />
+<div class="col-md-8 col-md-offset-2 grid">
+  <% current_user.grams.each do |gram| %>
+    <div class="col-md-4 grid-pic">
+      <%= image_tag gram.picture, class: 'img' %>
+    </div>
+  <% end %>
+</div>

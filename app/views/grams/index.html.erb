@@ -3,7 +3,7 @@
   <div class="card">
    <div class="handle">
      <%= image_tag gram.user.profile_picture, class: "user-card-pic" %>
-     <%= gram.user.first_name %>
+     <%= link_to "#{gram.user.first_name}", gram_path(gram.user_id) %>
    </div>
     <%= image_tag gram.picture, class: 'img-responsive' %>
     <p>
