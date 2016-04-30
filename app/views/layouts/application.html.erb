@@ -18,9 +18,10 @@
          </div>
       <div class="add pull-right">
           <% if current_user %>
-              <%= image_tag current_user.profile_picture, class: "profile-picture" %>
+            <%= link_to "Profile", edit_user_registration_path %>
              <%= link_to "New Post", new_gram_path %>
             <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+            <%= image_tag current_user.profile_picture, class: "profile-picture" %>
           <% else %>
             <%= link_to "Sign In", new_user_session_path %>
             <%= link_to "Sign Up", new_user_registration_path %>
