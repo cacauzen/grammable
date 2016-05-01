@@ -1,9 +1,9 @@
 <div class="col-xs-12  col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
-  <% @grams.each do |gram| %>
+  <% @grams.reverse.each do |gram| %>
   <div class="card">
    <div class="handle">
      <%= image_tag gram.user.profile_picture, class: "user-card-pic" %>
-     <%= link_to "#{gram.user.first_name}", gram_path(gram.user_id) %>
+     <%= link_to "#{gram.user.first_name}", profile_path(gram.user_id) %>
    </div>
     <%= image_tag gram.picture, class: 'img-responsive' %>
     <p>

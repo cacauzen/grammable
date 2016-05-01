@@ -46,13 +46,15 @@ a:hover {
   margin-top: 40px;
   padding: 0;
 }
-.handle {
+.handle a{
   margin: 10px;
   color: #C9C9C9;
   font-weight: bold;
   font-size: 18px;
 }
-
+.handle a:hover{
+  color: #252525;
+}
 .handle .img-responsive {
   image-size: cover;
 }

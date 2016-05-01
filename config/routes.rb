@@ -1,5 +1,6 @@
 Grammable::Application.routes.draw do
   devise_for :users, :controllers => { registrations: 'registrations' }
+  resources :profile, only: :show
   root "grams#index"
   resources :grams do
     resources :comments, only: :create
