@@ -15,8 +15,8 @@
 <br />
 <div class="col-md-8 col-md-offset-2 grid">
   <% @user.grams.each do |gram| %>
-    <div class="col-md-4 grid-pic">
-      <%= image_tag gram.picture, class: 'img' %>
+    <div class="col-xs-3 col-md-3 grid-pic">
+      <%= image_tag gram.picture, class: 'img-responsive' %>
     </div>
   <% end %>
 </div>

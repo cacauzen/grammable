@@ -146,15 +146,16 @@ input {
   margin: 5px;
   border: 2px solid #E9E9E9;
 }
+.grid {
+  padding: 80px;
+}
 .grid-pic {
-  width: 300px;
-  height: 300px;
-  margin-bottom: 15px;
+  width: 33.33%;
+  height: 33.33%;
+  margin-bottom: 30px;
   overflow: hidden;
 }
 .grid-pic img {
  object-fit: cover; /* Do not scale the image */
  object-position: center; /* Center the image within the element */
- height: 300px;
- width: 300px;
 }
