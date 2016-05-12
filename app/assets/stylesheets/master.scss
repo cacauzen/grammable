@@ -140,16 +140,45 @@ input {
   border: 5px solid #E9E9E9;
 }
 .user-card-pic{
-  height: 45px;
-  width: 45px;
+  height: 50px;
+  width: 50px;
   border-radius: 100%;
   margin: 5px;
-  border: 2px solid #E9E9E9;
+  border: 3px solid #E9E9E9;
+  background-color: #E9E9E9;
+}
+.user-info .user-card-pic{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  margin: 10px;
+  display: table;
+  border: 3px solid #E9E9E9;
+  background-color: #E9E9E9;
+}
+.stats{
+  color: #BCB8BA;
+}
+.stats h1{
+  color: #4D4C4D;
+}
+.stats span{
+  font-size: 17px;
+  color: #BCB8BA;
+  font-weight: bold;
+}
+.edit-info a{
+  font-size: 17px;
+  color: #BCB8BA;
+  padding: 5px 5px;
+  border: 2px solid #BCB8BA;
+  border-radius: 10px;
 }
 .user-info {
   max-width: 50%;
   margin: 0 auto;
 }
+
 .grid {
   max-width: 50%;
   margin: 0 auto;
@@ -169,9 +198,12 @@ input {
  height: 100%;
  overflow: hidden;
 }
-
+.clear{
+  clear: both;
+}
 /*MEDIA QUERIES*/
-@media (max-width: 600px) {
+
+@media (max-width: 900px) {
   .grid {
     max-width: 100%;
     padding: 0;

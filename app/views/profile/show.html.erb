@@ -4,15 +4,26 @@
   <div class="col-md-4">
     <%= image_tag @user.profile_picture, class: "user-card-pic" %>
   </div>
-  <div class="col-md-8">
-    <% if @user == current_user %>
-      <%= link_to "Edit My Info", edit_user_registration_path, class: "center" %>
-    <% end %>
+  <div class="col-md-8 stats">
+    <div class="col-md-12">
+      <h1><%= @user.first_name %></h1>
+    </div>
+    <div class="col-md-4">
+      <p><span><%= @user.grams.count %></span>  posts<p>
+    </div>
+    <div class="col-md-4">
+      <p><span><%= @user.comments.count %></span>  comments<p>
+    </div>
+    <div class="col-md-4 edit-info">
+      <% if @user == current_user %>
+        <%= link_to "Edit My Info", edit_user_registration_path, class: "center" %>
+      <% end %>
+    </div>
   </div>
 </div>
 <br />
 <br />
-<br />
+<br class="clear"/>
 <div class="grid table-row-equal">
   <% @user.grams.each do |gram| %>
     <div class="col-xs-3 col-md-3 grid-pic">
