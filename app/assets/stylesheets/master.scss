@@ -146,16 +146,38 @@ input {
   margin: 5px;
   border: 2px solid #E9E9E9;
 }
+.user-info {
+  max-width: 50%;
+  margin: 0 auto;
+}
 .grid {
-  padding: 80px;
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.grid .col-xs-3, .col-md-3{
+  padding: 5px;
 }
 .grid-pic {
   width: 33.33%;
-  height: 33.33%;
-  margin-bottom: 30px;
-  overflow: hidden;
 }
+
 .grid-pic img {
  object-fit: cover; /* Do not scale the image */
  object-position: center; /* Center the image within the element */
+ width: 100%;
+ height: 100%;
+ overflow: hidden;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 600px) {
+  .grid {
+    max-width: 100%;
+    padding: 0;
+  }
+  .grid .col-xs-3, .col-md-3{
+    padding: 2px;
+  }
+
 }

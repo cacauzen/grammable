@@ -1,6 +1,6 @@
 <!--Profile page linked from each photo and also from the navbar -->
 <br />
-<div class="col-md-8 col-md-offset-2 info">
+<div class="user-info">
   <div class="col-md-4">
     <%= image_tag @user.profile_picture, class: "user-card-pic" %>
   </div>
@@ -13,7 +13,7 @@
 <br />
 <br />
 <br />
-<div class="col-md-8 col-md-offset-2 grid">
+<div class="grid table-row-equal">
   <% @user.grams.each do |gram| %>
     <div class="col-xs-3 col-md-3 grid-pic">
       <%= image_tag gram.picture, class: 'img-responsive' %>
